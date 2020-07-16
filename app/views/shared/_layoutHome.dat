@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <!-- INCLUDE:shared/_headerLinksAndScripts.dat -->
+    </head>
+
+    <body>
+        <!-- PageContent -->
+
+        <!-- INCLUDE:shared/_footer.dat -->
+
+        <!-- INCLUDE:shared/_footerLinksAndScripts.dat -->
+    </body>
+</html>
