@@ -1,24 +1,24 @@
 var everywhereModalTemplate;
-$.postJSON = function(url, data, success) {
-    return $.post(url, data, success, 'json');
-};
-$.deleteJSON = function(url, success) {
-    return $.ajax({
-        type: "DELETE",
-        url: url,
-        success: success,
-        dataType: 'json'
-    });
-};
-$.putJSON = function(url, data, success) {
-    return $.ajax({
-        type: "PUT",
-        url: url,
-        data: data,
-        success: success,
-        dataType: 'json'
-    });
-};
+// $.postJSON = function(url, data, success) {
+//     return $.post(url, data, success, 'json');
+// };
+// $.deleteJSON = function(url, success) {
+//     return $.ajax({
+//         type: "DELETE",
+//         url: url,
+//         success: success,
+//         dataType: 'json'
+//     });
+// };
+// $.putJSON = function(url, data, success) {
+//     return $.ajax({
+//         type: "PUT",
+//         url: url,
+//         data: data,
+//         success: success,
+//         dataType: 'json'
+//     });
+// };
 
 $.helpers = {
     constants: { 
@@ -34,18 +34,41 @@ $.helpers = {
             }
         });
     }
+
+    $.fn.typeText = function(options) {
+        this.each(function () {
+            var $this = $(this);
+            var settings = $.extend({
+                linger: $this.data('linger') === undefined || $this.data('linger') === null ? false : !!$this.data('linger'),
+                text: $this.data('text'),
+                delay: $this.data('delay') || 0,
+                speed: $this.data('speed') || 150
+            }, options);
+            
+            var functionWriteChar = function(charIndex) {
+                $this.text($this.text() + settings.text[charIndex]);
+                if (settings.text.length > charIndex + 1) {
+                    window.setTimeout(function() { functionWriteChar(charIndex + 1) }, settings.speed);
+                } else if (!settings.linger) {
+                    $this.removeClass('has-console-cursor');
+                }
+            }
+
+            if (settings.text && settings.text.length) {
+                window.setTimeout(function() {
+                    $this.addClass('has-console-cursor');
+                    functionWriteChar(0);
+                }, settings.delay);
+            }
+        });
+
+        return this;
+    }
 })(jQuery);
 
 $(function() {
     everywhereModalTemplate = $('#EverywhereModalTemplate').remove().html();
-
-    $.getJSON("/api/account/", function(accountInfo) {
-        if (accountInfo && accountInfo.IsLoggedIn === true) {
-            $(".account-area").html('<span>Welcome back </span><a class="text-console-secondary" href="/account/">' + accountInfo.Username + '</a>');
-        } else {
-            $(".account-area").html('<span>Welcome. </span><a class="text-console-secondary" href="/account/login">Log in</a>');
-        }
-    });
+    $('.type-text').typeText();
 });
 
 $.toast = {

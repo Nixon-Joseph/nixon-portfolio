@@ -1,7 +1,7 @@
 $greenFont: #7ab87b;
 $purpleFont: #756bc5;
 $background: #212520;
-$consoleFont: "Exo", sans-serif;
+$consoleFont: 'Share Tech Mono', monospace;
 
 /***************************/
 /****Bootstrap overrides****/
@@ -93,6 +93,30 @@ a.text-console-secondary,
 .text-console-secondary a {
     color: $purpleFont;
     text-shadow: 0 0 10px #324a32;
+}
+
+.has-console-cursor {
+    position: relative;
+    display: inline-block;
+
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: 18%;
+        right: -0.8rem;
+        height: 10%;
+        width: 0.6rem;
+        background-color: #7ab87b;
+        -webkit-animation: flickerAnimation 1s infinite;
+        animation: flickerAnimation 1s infinite;
+    }
+}
+
+h1 {
+    &.has-console-cursor:after {
+        width: 1rem;
+        right: -1rem;
+    }
 }
 
 // nav.nav a {
