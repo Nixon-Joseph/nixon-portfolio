@@ -3,3 +3,4 @@ cache/
 node_modules
 .vscode/settings.json
 /app/angular_broken
+package-lock.json
