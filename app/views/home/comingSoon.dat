@@ -1,4 +1,4 @@
-<main role="main" id="ComingSoonContainer" class="text-center text-console d-flex justify-content-center align-items-center h100 flex-column">
+<main role="main" id="ComingSoonContainer" class="text-center text-console d-flex justify-content-center align-items-center h-100 flex-column">
     <h3 class="type-text" data-text="Coming Soon:"></h3>
     <h1 class="type-text" data-text="Joseph Nixon" data-delay="2000" data-linger="true"></h1>
 </main>
