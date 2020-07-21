@@ -110,6 +110,7 @@ class Page
 			foreach ($matches[1] as $match => $value) {
 				$escapedVal = preg_quote($value, '/');
 				$this->Site = ValueReplace("INCLUDE:$escapedVal", $getFileContentsFunc(VIEWS_PATH . "/$value"), $this->Site);
+				$this->HandleSiteIncludes($getFileContentsFunc);
 			}
 		}
 	}
@@ -120,6 +121,7 @@ class Page
 			foreach ($matches[1] as $match => $value) {
 				$escapedVal = preg_quote($value, '/');
 				$this->Content = ValueReplace("INCLUDE:$escapedVal", $getFileContentsFunc(VIEWS_PATH . "/$value"), $this->Content);
+				$this->HandlePageIncludes($getFileContentsFunc);
 			}
 		}
 	}
