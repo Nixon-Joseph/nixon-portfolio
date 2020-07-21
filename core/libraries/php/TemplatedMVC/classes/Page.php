@@ -104,24 +104,28 @@ class Page
 		}
 	}
 
-	public function HandleSiteIncludes(callable $getFileContentsFunc) {
+	public function HandleSiteIncludes(callable $getFileContentsFunc, int $recursiveLevel = 0, int $maxDepth = 5) {
 		preg_match_all("/<!-- INCLUDE:(.+) -->/", $this->Site, $matches);
 		if (isset($matches) === true && count($matches) > 1) {
 			foreach ($matches[1] as $match => $value) {
 				$escapedVal = preg_quote($value, '/');
 				$this->Site = ValueReplace("INCLUDE:$escapedVal", $getFileContentsFunc(VIEWS_PATH . "/$value"), $this->Site);
-				$this->HandleSiteIncludes($getFileContentsFunc);
+				if ($recursiveLevel < $maxDepth) {
+					$this->HandleSiteIncludes($getFileContentsFunc, $recursiveLevel + 1, $maxDepth);
+				}
 			}
 		}
 	}
 
-	public function HandlePageIncludes(callable $getFileContentsFunc) {
+	public function HandlePageIncludes(callable $getFileContentsFunc, int $recursiveLevel = 0, int $maxDepth = 5) {
 		preg_match_all("/<!-- INCLUDE:(.+) -->/", $this->Content, $matches);
 		if (isset($matches) === true && count($matches) > 1) {
 			foreach ($matches[1] as $match => $value) {
 				$escapedVal = preg_quote($value, '/');
 				$this->Content = ValueReplace("INCLUDE:$escapedVal", $getFileContentsFunc(VIEWS_PATH . "/$value"), $this->Content);
-				$this->HandlePageIncludes($getFileContentsFunc);
+				if ($recursiveLevel < $maxDepth) {
+					$this->HandlePageIncludes($getFileContentsFunc, $recursiveLevel + 1, $maxDepth);
+				}
 			}
 		}
 	}
