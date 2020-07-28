@@ -9,8 +9,6 @@
 
         <!-- INCLUDE:shared/_footer.dat -->
 
-        <!-- INCLUDE:shared/_everywhereModalTemplate.dat -->
-
         <!-- INCLUDE:shared/_footerLinksAndScripts.dat -->
     </body>
 </html>

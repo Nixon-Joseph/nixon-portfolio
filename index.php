@@ -10,14 +10,16 @@ require "$templatedMVCPath/TemplateMVCApp.php";
 //$app = new TemplateMVCApp("./app/cache");  // enable caching
 $app = new TemplateMVCApp();
 
-$app->Autoload($templatedMVCPath, "./app/controllers", array("./app/models", "./app/helpers", "./app/repos"));
+$app->Autoload($templatedMVCPath, "./app/controllers", array("./app/models", "./app/helpers", "./app/repos", "./app/classes"));
 
 // // private creds file, sets $dbServer, $dbName, $dbUser, and $dbPass variables
 // require "../private/nix_db_creds.php";
 // // configure the templated mvc app db access
 // $app->Config($dbServer, $dbName, $dbUser, $dbPass);
+$app->ConfigSession();
 // unset ($dbServer, $dbName, $dbUser, $dbPass); // unset variables so they can't be accessed again
 
+require "../private/nixon_google_creds.php";
 require "./app/classes/Constants.php";
 
 $siteData = array(); // set site data replacer values
@@ -29,6 +31,9 @@ $siteData["CopyYear"] = date("Y");
 $siteData["SiteAddress"] = Constants::SITE_ADDRESS;
 $siteData["SiteDescription"] = Constants::SITE_DESCRIPTION;
 $siteData["PageTitle"] = Constants::SITE_NAME;
+$siteData["reCAPTCHASiteKey"] = $recaptchaSiteKey;
+
+define('RECAPTCHA_SECRET', $recaptchaSecretKey);
 
 // starts the mvc process. Passing in view directory, name of 404 controller, and default site data replacer values
 $app->Start("./app/views", "FileNotFoundController", $siteData);

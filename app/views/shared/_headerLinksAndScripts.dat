@@ -14,7 +14,8 @@
     integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN"
     crossorigin="anonymous"
 />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
 <!-- <link href="https://fonts.googleapis.com/css?family=Exo&display=swap" rel="stylesheet" /> -->
 <link rel="stylesheet" href="/public/styles/main.css" />
-<!-- INCLUDE:shared/_analyticsTemplate.dat -->
+<!-- INCLUDE:shared/_analyticsTemplate.dat --><!-- in your header -->

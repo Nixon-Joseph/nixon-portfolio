@@ -2,15 +2,14 @@
 <html lang="en-us">
     <head>
         <!-- INCLUDE:shared/_headerLinksAndScripts.dat -->
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     </head>
 
     <body>
         <!-- PageContent -->
 
         <!-- INCLUDE:shared/_footer.dat -->
-
-        <!-- INCLUDE:shared/_everywhereModalTemplate.dat -->
-
+        
         <!-- INCLUDE:shared/_footerLinksAndScripts.dat -->
     </body>
 </html>

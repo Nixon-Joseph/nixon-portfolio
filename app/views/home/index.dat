@@ -1,12 +1,362 @@
-<div class="container">
-    <!-- INCLUDE:shared/_header.dat -->
-</div>
-<main role="main" class="container">
-    <div class="row">
-        <div class="col-md-8 blog-main">
-            <h3 class="pb-3 mb-4 font-italic border-bottom">
-                From the Firehose
-            </h3>
+<!-- INCLUDE:shared/_header.dat -->
+<nav class="d-flex flex-column floating-left-nav" role="navigation">
+    <a class="text-special p-1" rel="nofollow" href="#" title="Go to Contact section"><i class="fas fa-envelope"></i></a>
+    <a target="_blank" class="text-special p-1" rel="nofollow" title="Go to Joseph Nixon's GitHub page" href="https://github.com/Nixon-Joseph"><i class="fab fa-github"></i></a>
+    <a target="_blank" class="text-special p-1" rel="nofollow" title="Go to Joseph Nixon's Linkedin page" href="https://www.linkedin.com/in/joseph-nixon-30247377"><i class="fab fa-linkedin-in"></i></a>
+</nav>
+<header class="home-hero d-flex align-items-center">
+    <div class="container">
+        <div class="row py-5 d-flex">
+            <div class="col-12 col-sm-6 col-md-3 text-center">
+                <img class="profile rounded img-fluid" src="./public/images/nixon-image.png" alt="Joseph Nixon">
+                <h1 class="mt-2 mb-0">Joseph Nixon</h1>
+                <h2 class="h6 mb-2 ">Web Developer/Software Engineer</h1>
+                <span class="text-muted d-block">B.S. Web Design and Development</span>
+                <a target="_blank" class="text-special" title="Go to Brigham Young University - Idaho's website" href="https://byui.edu">Brigham Young University - Idaho</a>
+                <nav class="text-center mt-3 h3 mb-0" role="navigation">
+                    <a class="text-special p-1" rel="nofollow" href="#" title="Go to Contact section"><i class="fas fa-envelope"></i></a>
+                    <a target="_blank" class="text-special p-1" rel="nofollow" title="Go to Joseph Nixon's GitHub page" href="https://github.com/Nixon-Joseph"><i class="fab fa-github"></i></a>
+                    <a target="_blank" class="text-special p-1" rel="nofollow" title="Go to Joseph Nixon's Linkedin page" href="https://www.linkedin.com/in/joseph-nixon-30247377"><i class="fab fa-linkedin-in"></i></a>
+                </nav>
+            </div>
+            <div class="col-12 col-sm-6 col-md-9 pt-5">
+                <h3>Biography</h3>
+                <p>I have a Bachelor of Science degree from Brigham Young University - Idaho (BYUI).</p>
+                <p>I currently work at Aldrich Web Solutions as a Developer I, where I am integral in the production and upkeep of our integrated mobile application, custom PIM (Product Information Managment) software, and custom e-Commerse website platform. Aside from work, I am also an open-source enthusiast, and Linux enthusiast.</p>
+                <p>My interests lie in solving problems related to software implementation at a high rate, with impeccable quality.</p>
+                <div class="row">
+                    <div class="col-md-5">
+                        <h3>Interests</h3>
+                        <ul class="ul-interests">
+                            <li>Software Engineering</li>
+                            <li>Customer/User Experience</li>
+                            <li>Puzzle Solving</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-7">
+                        <h3>Education</h3>
+                        <ul class="ul-edu fa-ul">
+                            <li>
+                                <i class="fa-li fas fa-graduation-cap"></i>
+                                <div class="description">
+                                    <p class="m-0">B.S. 2017</p>
+                                    <p class="text-muted m-0">Brigham Young University - Idaho</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<main role="main">
+    <div class="container">
+        <section class="py-4 text-center mt-3" id="SkillsArea">
+            <h3 class="h1">Skills</h3>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4 mb-2">
+                    <div class="card floating">
+                        <div class="card-body p-2">
+                            <h3 class="card-title mb-0">
+                                <i class="devicon-csharp-plain colored d-block mb-2"></i>
+                                C#
+                            </h3>
+                            <p>Microsoft .NET, MVC, Razor</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-2">
+                    <div class="card floating">
+                        <div class="card-body p-2">
+                            <h3 class="card-title mb-0">
+                                <i class="devicon-angularjs-plain colored d-block mb-2"></i>
+                                Angular/AngularJS
+                            </h3>
+                            <p>Routing, Dynamic Components, SPA's</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-2">
+                    <div class="card floating">
+                        <div class="card-body p-2">
+                            <h3 class="card-title mb-0">
+                                <i class="devicon-php-plain colored d-block mb-2"></i>
+                                PHP
+                            </h3>
+                            <p>OOP, Custom MVC, View Templating</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4 mb-2">
+                    <div class="card floating">
+                        <div class="card-body p-2">
+                            <h3 class="card-title mb-0">
+                                <i class="devicon-html5-plain colored d-block mb-2"></i>
+                                HTML5
+                            </h3>
+                            <p>Semantic, Accessibility, SEO</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-2">
+                    <div class="card floating">
+                        <div class="card-body p-2">
+                            <h3 class="card-title mb-0">
+                                <span class="d-block mb-2">
+                                    <i class="devicon-css3-plain colored"></i>-<i class="devicon-sass-original colored"></i>
+                                </span>
+                                CSS3, SASS
+                            </h3>
+                            <p>Responsive, Custom, Bootstap</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-2">
+                    <div class="card floating">
+                        <div class="card-body p-2">
+                            <h3 class="card-title mb-0">
+                                <i class="devicon-javascript-plain colored d-block mb-2"></i>
+                                Javascript
+                            </h3>
+                            <p>AJAX, NPM, CORS, JSON</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4 mb-2">
+                    <div class="card floating">
+                        <div class="card-body p-2">
+                            <h3 class="card-title mb-0">
+                                <span class="d-block mb-2">
+                                    <i class="devicon-git-plain colored"></i>-<i class="devicon-github-plain colored"></i>
+                                </span>
+                                GIT/Github
+                            </h3>
+                            <p>Merging, Stashing, Conflict Avoidance</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-2">
+                    <div class="card floating">
+                        <div class="card-body p-2">
+                            <h3 class="card-title mb-0">
+                                <i class="devicon-jquery-plain colored d-block mb-2"></i>
+                                JQuery
+                            </h3>
+                            <p>Plugins, Animations, UI</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-2">
+                    <div class="card floating">
+                        <div class="card-body p-2">
+                            <h3 class="card-title mb-0">
+                                <i class="devicon-mysql-plain colored d-block mb-2"></i>
+                                MySQL/Sql Server
+                            </h3>
+                            <p>Structure, Queries, Views, Joins</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="row">
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="card floating">
+                        <div class="card-body p-2">
+                            <h3 class="card-title mb-0">
+                                <i class="devicon-bootstrap-plain colored d-block mb-2"></i>
+                                REPLACE
+                            </h3>
+                            <p>REPLACE</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="card floating">
+                        <div class="card-body p-2">
+                            <h3 class="card-title mb-0">
+                                <i class="devicon-sass-original colored d-block mb-2"></i>
+                                REPLACE
+                            </h3>
+                            <p>REPLACE</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="card floating">
+                        <div class="card-body p-2">
+                            <h3 class="card-title mb-0">
+                                <i class="devicon-ubuntu-plain colored d-block mb-2"></i>
+                                REPLACE
+                            </h3>
+                            <p>REPLACE</p>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </section>
+        <hr>
+        <div class="row">
+            <div class="col-12 col-lg-4 section-heading">
+                <h3 class="h1">Experience</h1>
+            </div>
+            <div class="col-12 col-lg-8">
+                <div class="row experience">
+                    <div class="col-auto text-center flex-column d-none d-sm-flex">
+                        <div class="row h-50">
+                            <div class="col">&nbsp;</div>
+                            <div class="col">&nbsp;</div>
+                        </div>
+                        <div class="m-2">
+                            <span class="badge badge-pill border exp-active">&nbsp;</span>
+                        </div>
+                        <div class="row h-50">
+                            <div class="col border-right">&nbsp;</div>
+                            <div class="col">&nbsp;</div>
+                        </div>
+                    </div>
+                    <div class="col py-2">
+                        <div class="card bg-transparent">
+                            <div class="card-body">
+                                <h4 class="card-title exp-title text-muted mt-0 mb-1">Developer I</h4>
+                                <h4 class="card-title exp-company text-muted my-0"><a href="https://www.AldrichSolutions.com/" title="Go to Aldrich Web Solutions' website" target="_blank" rel="nofollow">Aldrich Web Solutions</a></h4>
+                                <div class="text-muted exp-meta">
+                                    Nov 2018 – Present | <span>Marion, IL</span>
+                                </div>
+                                <div class="card-text">
+                                    <ul>
+                                        <li>
+                                            <strong>Application Development</strong>
+                                            <ul>
+                                                <li>Manage, maintain, and develop the full range of web-based software for our 80+ clients</li>
+                                                <li>Create, manage and deploy integrated Xamarin Forms applications</li>
+                                                <li>Create, manage and deploy integrated WinForms applications</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <strong>Backend &amp; Architecture:</strong>
+                                            <ul>
+                                                <li>Asyncronous logic and database access</li>
+                                                <li>Migrations and data structure</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row experience">
+                    <div class="col-auto text-center flex-column d-none d-sm-flex">
+                        <div class="row h-50">
+                            <div class="col border-right">&nbsp;</div>
+                            <div class="col">&nbsp;</div>
+                        </div>
+                        <div class="m-2">
+                            <span class="badge badge-pill border ">&nbsp;</span>
+                        </div>
+                        <div class="row h-50">
+                            <div class="col border-right">&nbsp;</div>
+                            <div class="col">&nbsp;</div>
+                        </div>
+                    </div>
+                    <div class="col py-2">
+                        <div class="card bg-transparent">
+                            <div class="card-body">
+                                <h4 class="card-title exp-title text-muted mt-0 mb-1">Jr. Developer</h4>
+                                <h4 class="card-title exp-company text-muted my-0"><a href="https://www.AldrichSolutions.com/" title="Go to Aldrich Web Solutions' website" target="_blank" rel="nofollow">Aldrich Web Solutions</a></h4>
+                                <div class="text-muted exp-meta">
+                                    Nov 2016 – 2018 | <span>Marion, IL</span>
+                                </div>
+                                <div class="card-text">
+                                    <ul>
+                                        <li>
+                                            <strong>Application Development</strong>
+                                            <ul>
+                                                <li>Bug management</li>
+                                                <li>Feature implementation</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row experience">
+                    <div class="col-auto text-center flex-column d-none d-sm-flex">
+                        <div class="row h-50">
+                            <div class="col border-right">&nbsp;</div>
+                            <div class="col">&nbsp;</div>
+                        </div>
+                        <div class="m-2">
+                            <span class="badge badge-pill border ">&nbsp;</span>
+                        </div>
+                        <div class="row h-50">
+                            <div class="col">&nbsp;</div>
+                            <div class="col">&nbsp;</div>
+                        </div>
+                    </div>
+                    <div class="col py-2">
+                        <div class="card bg-transparent">
+                            <div class="card-body">
+                                <h4 class="card-title exp-title text-muted mt-0 mb-1">Web Developer</h4>
+                                <h4 class="card-title exp-company text-muted my-0">BLACKpine Media</h4>
+                                <div class="text-muted exp-meta">
+                                    Feb 2016 – Jun 2016 | <span>Idaho Falls, ID</span>
+                                </div>
+                                <div class="card-text">
+                                    <ul>
+                                        <li>
+                                            <strong>Site Management</strong>
+                                            <ul>
+                                                <li>Wordpress setup</li>
+                                                <li>Realize custom theme from mockups</li>
+                                                <li>Custom responsive layouts</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row d-flex justify-content-center mb-3">
+            <div class="col-12 col-md-8 text-center card floating">
+                <div class="card-body">
+                    <h3 class="h1 card-title">Contact Me</h3>
+                    <div class="text-left">
+                        <form action="/contact" method="POST" id="ContactForm" novalidate autocomplete="off" data-contact-success="<!-- MODEL:ContactSuccess -->" data-contact-error="<!-- MODEL:ContactError -->">
+                            <div class="form-group">
+                                <label for="Name">Name *</label>
+                                <input type="text" name="Name" id="Name" class="form-control" aria-required="true" value="<!-- MODEL:ContactName -->" />
+                                <div class="invalid-feedback">Name is required.</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="Email">Email *</label>
+                                <input type="email" name="Email" id="Email" class="form-control" aria-required="true" value="<!-- MODEL:ContactEmail -->" />
+                                <div class="invalid-feedback">Email is required.</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="Comments">Questions/Comments *</label>
+                                <textarea type="text" name="Comments" id="Comments" class="form-control" rows="7" aria-required="true"><!-- MODEL:ContactComments --></textarea>
+                                <div class="invalid-feedback">Question/Comment is required.</div>
+                            </div>
+                            <div class="form-group d-flex justify-content-center">
+                                <div class="g-recaptcha" data-sitekey="<!-- reCAPTCHASiteKey -->"></div>
+                            </div>
+                            <button type="submit" name="SubmitButton" class="btn btn-secondary btn-outline btn-block text-white">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </main>

@@ -1,0 +1,1 @@
+function scrollToForm(){var o=$("#ContactForm").offset().top-43;$(window).scrollTop(o)}$(function(){$("#ContactForm").data("contactSuccess")&&($.toast.success($("#ContactForm").data("contactSuccess")),scrollToForm()),$("#ContactForm").data("contactError")&&($.toast.danger($("#ContactForm").data("contactError")),scrollToForm())});
